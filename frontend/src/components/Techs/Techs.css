@@ -1,0 +1,113 @@
+.techs {
+    background-color: #272727;
+    padding: 100px 0;
+}
+
+.techs__block {
+    margin: 90px auto 0;
+}
+
+.techs__block-title {
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: -2px;
+    margin: 0;
+    padding: 0;
+}
+
+.techs__block-text {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.56px;
+    max-width: 460px;
+    margin: 26px auto 100px;
+}
+
+.techs__points {
+    list-style: none;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-items: center;
+    max-width: 690px;
+
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.techs__point {
+    user-select: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #303030;
+    width: 90px;
+    height: 60px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.56px;
+}
+
+@media screen and (max-width:768px) {
+    .techs {
+        padding: 90px 0;
+    }
+    .techs__block {
+        margin-top: 80px;
+    }
+    .techs__block-text {
+        font-size: 12px;
+        margin: 20px auto 80px;
+        max-width: 450px;
+    }
+    .techs__points {
+        max-width: 648px;
+    }
+    .techs__point {
+        font-size: 12px;
+        width: 84px;
+        height: 57px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .techs__points {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .techs {
+        padding: 69px 0 72px;
+    }
+    .techs__block {
+        margin-top: 60px;
+    }
+    .techs__block-title {
+        font-size: 30px;
+        letter-spacing: -1.2px;
+        line-height: 29px;
+    }
+    .techs__block-text {
+        margin: 29px auto 50px;
+        line-height: 16px;
+        font-size: 11px;
+    }
+    .techs__points {
+        max-width: 124px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

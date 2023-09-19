@@ -1,0 +1,145 @@
+.card {
+    max-width: 360px;
+}
+
+.card__promo {
+    position: relative;
+    width: 360px;
+    height: 201px;
+}
+
+.card__image {
+    width: 360px;
+    height: 201px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.card__link {
+    margin: 0;
+    padding: 0;
+}
+
+.card__btn {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    z-index: 2;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.card__promo:hover .card__btn {
+    opacity: 1;
+}
+
+.card__btn_type_saved {
+    background-image: url('../../images/saved.svg');
+    width: 21px;
+    height: 21px;
+    transition: 0.3s ease;
+}
+
+.card__btn_type_to-save {
+    background-image: url('../../images/tosave.svg');
+    width: 72px;
+    height: 21px;
+    transition: 0.3s ease;
+}
+
+.card__btn_type_delete {
+    background-image: url('../../images/delete.svg');
+    width: 21px;
+    height: 21px;
+}
+
+.card__info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 12px auto 0;
+    max-width: 332px;
+    min-height: 32px;
+}
+
+.card__name {
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+    padding: 0;
+}
+
+.card__duration {
+    color: #8B8B8B;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 10px; 
+    margin: 0;
+    padding: 3px 4px;
+    box-sizing: border-box;
+    background-color: #2F2F2F;
+    border-radius: 3px;
+    min-width: 52px;
+    max-height: 18px;
+}
+
+@media screen and (max-width:1279px) {
+    .card {
+        max-width: 339px;
+    }
+    .card__image {
+        width: 339px;
+        height: 190px;
+    }
+    .card__promo {
+        width: 339px;
+        height: 190px;
+    }
+    .card__info {
+        margin-top: 25px;
+    }
+    .card__name {
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        max-width: 250px;
+    }
+    .card__btn {
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .card {
+        max-width: 300px;
+    }
+    .card__image {
+        width: 300px;
+        height: 168px;
+    }
+    .card__promo {
+        width: 300px;
+        height: 168px;
+    }
+    .card__info {
+        margin-top: 13px;
+    }
+    .card__btn {
+        top: 10px;
+        right: 10px;
+    }
+    .cards__btn-more {
+        width: 240px;
+    }
+    .card__name {
+        font-size: 12px;
+        line-height: 18px;
+        margin: 2px 0 0;
+    }
+    .card__duration {
+        margin-top: 4px;
+    }
+}

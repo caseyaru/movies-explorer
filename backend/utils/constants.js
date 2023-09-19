@@ -1,0 +1,21 @@
+const OK = 200;
+const CREATED = 201;
+const BAD_REQUEST = 400;
+const AUTH_ERROR = 401;
+const FORBIDDEN = 403;
+const NOT_FOUND = 404;
+const DUPLICATE = 409;
+const SERVER_ERROR = 500;
+const DB_DUPLICATE = 11000;
+
+module.exports = {
+  OK,
+  CREATED,
+  BAD_REQUEST,
+  AUTH_ERROR,
+  FORBIDDEN,
+  NOT_FOUND,
+  DUPLICATE,
+  SERVER_ERROR,
+  DB_DUPLICATE,
+};

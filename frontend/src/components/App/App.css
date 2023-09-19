@@ -1,0 +1,17 @@
+.page {
+  background-color: #202020;
+  font-family: "Inter", Arial, sans-serif;
+  font-style: normal;
+  color: #FFF;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  align-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.page__container {
+  height: 100vh;
+}

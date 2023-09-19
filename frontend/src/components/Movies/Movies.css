@@ -1,0 +1,45 @@
+.movies {
+    margin: 0 auto;
+    max-width: calc(100% - 140px);
+}
+
+.movies__notfound-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 0;
+}
+
+.movies__notfound-title {
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+}
+
+.movies__notfound-subtitle {
+    margin: 18px 0 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    .movies {
+        max-width: calc(100% - 45px);
+        margin: 0 30px;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .movies {
+        max-width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+    .movies__notfound-title {
+        margin: 0 auto;
+        font-size: 14px;
+    }
+    .movies__notfound-subtitle {
+        font-size: 12px;
+    }
+}
